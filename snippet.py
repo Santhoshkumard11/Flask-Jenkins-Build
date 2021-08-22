@@ -1,6 +1,7 @@
 import argparse
 
 def get_args():
+    """ Get the arguments passed in the command line and return it as dict and str respectively""""
     
     parser = argparse.ArgumentParser(description='Pass two numbers and a operation to perform on them')
     
@@ -14,6 +15,8 @@ def get_args():
 
 
 def check_posted_data(posted_data, function_name):
+    """ Validating the posted data and returning the status code """
+    
     if (function_name == "add" or function_name == "subtract" or function_name == "multiply"):
         if "x" not in posted_data or "y" not in posted_data:
             return 301  # Missing parameter

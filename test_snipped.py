@@ -15,3 +15,4 @@ class TestSnippet(unittest.TestCase):
             result = check_posted_data(data[0],data[1])
             
             self.assertEqual(result, data[2])
+
